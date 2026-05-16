@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Singing</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="bar">
+        <button id="play">▶ Play</button>
+        <button id="save">⬇ Save selection</button>
+        <button id="folder">📁 Folder</button>
+        <span id="status">idle</span>
+        <button id="options" class="icon-btn" aria-label="Options">⚙</button>
+      </div>
+      <div id="options-panel" class="popover hidden">
+        <label class="row">
+          <span>Input device</span>
+          <select id="device-select"></select>
+        </label>
+        <label class="row">
+          <span>Save folder</span>
+          <div class="row-inline">
+            <input id="folder-input" type="text" spellcheck="false" />
+            <button id="folder-pick" class="icon-btn" title="Choose folder">📁</button>
+          </div>
+        </label>
+        <label class="row">
+          <span>Buffer length</span>
+          <select id="buffer-select">
+            <option value="300">5 min</option>
+            <option value="600">10 min</option>
+            <option value="900">15 min</option>
+            <option value="1800">30 min</option>
+            <option value="3600">60 min</option>
+          </select>
+        </label>
+        <label class="row">
+          <span>Default play length</span>
+          <select id="play-select">
+            <option value="10">last 10 s</option>
+            <option value="30">last 30 s</option>
+            <option value="60">last 60 s</option>
+            <option value="120">last 2 min</option>
+          </select>
+        </label>
+      </div>
+      <div class="wave-wrap">
+        <canvas id="wave"></canvas>
+        <div id="selection" class="selection hidden"></div>
+        <div id="cursor" class="cursor"></div>
+      </div>
+      <audio id="player" preload="auto"></audio>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
