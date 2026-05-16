@@ -27,9 +27,7 @@ Singing 是个挂在菜单栏的小程序，**默默录下最近 10 分钟的麦
 
 ## 截图
 
-<p align="center">
-  <em>（暂无）</em>
-</p>
+<p align="center"><img src="docs/screenshot.png" width="720" alt="Singing 主界面" /></p>
 
 <!-- 想加图：把 docs/screenshot.png 放进去后改成
 <p align="center"><img src="docs/screenshot.png" width="720" alt="Singing 主界面" /></p>
