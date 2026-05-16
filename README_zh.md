@@ -47,7 +47,14 @@ Singing 是个挂在菜单栏的小程序，**默默录下最近 10 分钟的麦
 
 ## 安装
 
-下载预编译的 `.app`（待发 Releases）或自己 [从源码构建](#build-from-source)。
+从 [Releases](https://github.com/awlte/singing/releases) 下载最新 `.zip`（macOS arm64），或者 [从源码构建](#build-from-source)。
+
+```
+unzip Singing-0.1.0-aarch64.zip
+mv Singing.app /Applications/
+# 没签名，第一次右键 → 打开，或者：
+xattr -d com.apple.quarantine /Applications/Singing.app
+```
 
 首次启动会弹麦克风权限，允许即可。
 

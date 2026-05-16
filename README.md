@@ -47,7 +47,14 @@ No AI, no cloud, no transcription. One icon, one window, one folder.
 
 ## Install
 
-Download a prebuilt `.app` from Releases (coming soon) or [build from source](#build-from-source).
+Grab the latest `.zip` from [Releases](https://github.com/awlte/singing/releases) (macOS arm64), or [build from source](#build-from-source).
+
+```
+unzip Singing-0.1.0-aarch64.zip
+mv Singing.app /Applications/
+# the app isn't signed — right-click → Open the first time, or:
+xattr -d com.apple.quarantine /Applications/Singing.app
+```
 
 First launch prompts for microphone access — allow it.
 
